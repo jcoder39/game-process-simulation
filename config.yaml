@@ -1,0 +1,34 @@
+products: 
+  - id: fire
+    num: 5
+  - id: earth
+    num: 3
+recipes:
+  - name: recipe1
+    components:
+    - id: fire
+      num: 1
+    product:
+      id: water
+      num: 1
+  - name: recipe2
+    components:
+    - id: earth
+      num: 1
+    - id: water
+      num: 1
+    product:
+      id: mud
+      num: 1
+projects:
+  - name: factory1
+    abilities:
+    - name: recipe1
+      duration: 3
+  - name: factory2
+    abilities:
+    - name: recipe2
+      duration: 2
+buildings:
+  - project: factory1
+  - project: factory2
